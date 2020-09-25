@@ -1,0 +1,75 @@
+.form{
+  height: 70px;
+  background-color: rgb(199, 199, 199);
+  border-bottom: 1px solid grey;
+  border-radius: 0.5rem;
+}
+
+.form-wrap{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.available-bike{
+  background-color: rgb(199, 199, 199);
+  border-bottom: 1px solid grey;
+  border-radius: 0.5rem;
+}
+.available-bike,.rental-bike {
+  padding: 1rem 2rem;
+}
+
+
+.available-bike .list-group-item{
+  background-color: rgb(231, 231, 231);
+  border-bottom: 1px solid grey;
+}
+
+.rental-bike-title, .available-bike-title, .counter{
+  font-size: 18px;
+  font-weight: bold; 
+}
+
+.bike
+
+.bike-exit-active{
+  animation: bike 1s ease-out forwards; 
+}
+
+.bike-enter-active{
+  animation: bike 1s ease-in alternate-reverse; 
+}
+
+
+@keyframes bike {
+  0% {
+    transform: translateX(0);
+  }
+
+  40% {
+    transform: translateX(30px);
+    opacity: .7;
+  }
+
+  100%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}
+
+/* test get api whith lib axios */
+
+.buttonsData{
+  width: 100%;
+  height: auto;
+  margin: 50px 0;
+  padding: 0 8px;
+
+  border: 1px solid red;
+}
+
+.someData{
+  width: 100%;
+  margin: 10px 0;
+  height: auto;
+}
